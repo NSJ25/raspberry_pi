@@ -9,7 +9,7 @@ led2 = LED(15)
 buzzer = Buzzer(18) 
 
 # Initialisation de la LED RGB avec ses broches rouge, verte et bleue
-rgb = RGBLED(red=16, green=20, bleu=21)  
+rgb = RGBLED(red=16, green=20, blue=21)  
 
 # Initialisation des boutons avec gestion anti-rebond (bounce_time = temps à attendre pour ignorer un faux appui)
 bouton = Button(23, bounce_time=0.5) 
@@ -27,6 +27,7 @@ def control_buzzer():
 		buzzer.off()
 		rgb.color = (1,0,0)
 
+
 # Fonction pour allumer successivement les deux LEDs quand le bouton normal est appuyé
 def allumage():
 	if bouton.is_pressed:
@@ -41,6 +42,7 @@ def allumage():
 		# Si bouton pas appuyé, LEDs éteintes
 		led1.off()
 		led2.off()
+
 
 # Boucle infinie qui vérifie sans cesse l'état des boutons et agit en conséquence
 while True:
