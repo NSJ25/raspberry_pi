@@ -29,7 +29,7 @@ def control_buzzer():
 
 
 # Fonction pour allumer successivement les deux LEDs quand le bouton normal est appuyé
-def allumage():
+def allumer():
 	if bouton.is_pressed:
 		led1.on()
 		sleep(2)
@@ -48,5 +48,3 @@ def allumage():
 while True:
 	control_buzzer()
 	allumage()
-
-	
