@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>test_led</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Test FLask</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Test de la LED</h2>
+            <p>
+                Cette page est utilisée pour tester le fonctionnement de la LED via une page web avec Flask.
+            </p>
+            <p>
+                Assurez-vous que la LED est correctement connectée et allumez-la en cliquant sur le bouton ci-dessous.
+            </p> 
+            <form id="ledForm" method="post" action="/etat_led">
+                
+                <!-- Le bouton envoie une requête POST pour changer l'état de la LED -->
+                <button id="ledButton"> {{ etat }} </button> 
+                <!-- Le texte du bouton change en fonction de l'état de la LED -->
+                <p id="ledStatus"> {{ message }} </p>
+                
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>The GhostWrter 25, Juillet 2025</p>
+    </footer>
+</body>    
+</html>

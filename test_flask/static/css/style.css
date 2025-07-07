@@ -1,0 +1,77 @@
+html{
+    margin:0
+    padding:0 
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+main{
+    padding: 20px;
+}
+section{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+h1{
+    color: #4CAF50;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}       
+button:hover{
+    background-color: #45a049;
+}
+p{  
+    font-size: 16px;
+    line-height: 1.5;
+}
+#ledStatus{
+    font-weight: bold;
+    color: #4CAF50;
+}
+#ledButton{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#ledButton:hover{
+    background-color: #45a049;
+}
+#ledForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ledForm button{
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}           
+#ledForm p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+/* C'est le style de la page d'accueil */

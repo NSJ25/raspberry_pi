@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test AJAX Fetch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body onload="init()">
+    <header>
+        <h1>Test AJAX Fetch</h1>
+    </header>
+
+    <main>
+        <h2>Test </h2>
+        <p>
+            Test de la fonction <code> AJAX </code> et <code> Fetch </code> pour récupérer des données depuis le serveur.
+        </p>
+        <h2> Fonctionnement </h2>
+        <p>
+            Cliquez sur les boutons pour changer la couleur de la LED RGB. 
+        </p>
+        <p>
+            Le bouton <code> On Rouge </code> allume la LED en rouge.
+        </p>
+        <p> 
+            Le bouton <code> On Vert </code> allume la LED en vert.
+        </p>
+        <p>
+            Le bouton <code> On Bleu </code> allume la LED en bleu.
+        </p>
+        <p>
+            Le bouton <code> Eteindre </code> éteint la LED.
+        </p>
+        
+        <button onclick="onRouge()">red</button>
+        <button onclick="onVert()">green</button>
+        <button onclick="onBleu()">blue</button>
+        <button onclick="eteindre()">off</button>
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <p> The Ghostwriter, Juillet 2025 Test AJAX Fetch</p>
+    </footer>
+    
